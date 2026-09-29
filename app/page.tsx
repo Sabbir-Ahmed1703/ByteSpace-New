@@ -6,6 +6,7 @@ import GrowthSection from "@/components/GrowthSection";
 import CreatorsSection from "@/components/CreatorsSection";
 import CTASection from "@/components/CTASection";
 import TestimonialsSection from "@/components/TestimonialsSection";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <CreatorsSection />
       <CTASection />
       <TestimonialsSection />
+      <Footer />
     </main>
   );
 }
