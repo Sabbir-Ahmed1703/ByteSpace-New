@@ -1,0 +1,32 @@
+Folder PATH listing for volume Windows 10
+Volume serial number is 00000011 4049:E4B7
+C:\USERS\HP\DOCUMENTS\BYTESPACE-NEW\APP
+³   favicon.ico
+³   globals.css
+³   layout.tsx
+³   not-found.tsx
+³   page.tsx
+³   
+ÃÄÄÄcourses
+³   ÀÄÄÄ[id]
+³       ³   page.tsx
+³       ³   
+³       ÃÄÄÄlessons
+³       ³       page.tsx
+³       ³       
+³       ÀÄÄÄreviews
+³               page.tsx
+³               
+ÃÄÄÄcreators
+³   ÀÄÄÄ[id]
+³           page.tsx
+³           
+ÃÄÄÄlogin
+³       page.tsx
+³       
+ÃÄÄÄregister
+³       page.tsx
+³       
+ÀÄÄÄsearch
+        page.tsx
+        
