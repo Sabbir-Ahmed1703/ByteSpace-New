@@ -8,14 +8,16 @@ export default function GrowthFeature({
   feature,
 }: GrowthFeatureProps) {
   return (
-    <article className="group border-b border-white/15 pb-6 last:border-b-0">
+    <article className="group border-b border-white/15 pb-7 last:border-b-0 last:pb-0">
       <div className="flex gap-5">
-        <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-lime-300 text-sm font-black text-slate-950 transition group-hover:scale-105">
+        {/* Icon */}
+        <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-[#B8FF3D] text-sm font-black text-slate-950 shadow-lg transition duration-300 group-hover:rotate-3 group-hover:scale-105">
           {feature.icon}
         </div>
 
-        <div>
-          <h3 className="text-xl font-bold text-white">
+        {/* Content */}
+        <div className="pt-1">
+          <h3 className="text-lg font-black tracking-tight text-white sm:text-xl">
             {feature.title}
           </h3>
 

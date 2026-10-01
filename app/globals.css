@@ -1,8 +1,14 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #111827;
+  --primary: #173ee5;
+  --primary-dark: #1235c9;
+  --lime: #b8ff3d;
+  --pink: #ff3d9a;
+  --text: #111827;
+  --muted: #6b7280;
+  --light: #f8f9f5;
+  --border: #e5e7eb;
 }
 
 * {
@@ -15,7 +21,133 @@ html {
 
 body {
   margin: 0;
-  background: var(--background);
-  color: var(--foreground);
+  background: #ffffff;
+  color: var(--text);
   font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ================================
+   COMMON CONTAINER
+================================ */
+
+.container {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+/* ================================
+   SECTION SPACING
+================================ */
+
+.section {
+  padding: 90px 0;
+}
+
+.section-title {
+  margin: 0;
+  font-size: 38px;
+  line-height: 1.08;
+  font-weight: 800;
+  letter-spacing: -1.5px;
+}
+
+.section-description {
+  max-width: 650px;
+  margin: 16px auto 0;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* ================================
+   SCROLLBAR
+================================ */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #b9b9b9;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 1024px) {
+  .container {
+    width: min(92%, 900px);
+  }
+
+  .section {
+    padding: 70px 0;
+  }
+
+  .section-title {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: min(92%, 640px);
+  }
+
+  .section {
+    padding: 60px 0;
+  }
+
+  .section-title {
+    font-size: 30px;
+  }
+
+  .section-description {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: calc(100% - 28px);
+  }
+
+  .section {
+    padding: 48px 0;
+  }
+
+  .section-title {
+    font-size: 27px;
+  }
 }
